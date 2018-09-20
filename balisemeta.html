@@ -3,42 +3,46 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Balise Meta</title>
-
+    <title>Contenu</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <nav>
-        <a href="index.html">Page principale</a>|
-        <a href="baliselink.html">Balise "link"</a>|
-        <a href="balisehead.html">Balise "head"</a>|
+       <ul class="Menu">
+           <ol><a href="index.html">Page principale</a></ol>
+           <ol><a href="baliselink.html">Balise "link"</a></ol>
+           <ol><a href="balisehead.html">Balise "head"</a></ol>
+        </ul>
     </nav>
     <h1>Définition :</h1>
     <h3>
-        <article>Les balises <strong>meta</strong> servent à placer des métadonnées (metadata) dans une page HTML.
+        <article><p>Les balises <strong>meta</strong> servent à placer des métadonnées (metadata) dans une page HTML.
             On placera ces informations dans l’élément head, et elles ne seront pas affichées sur la page.
-            Les balises Meta utilisent des valeurs précises, voici quelques éxemples :
+            Les balises Meta utilisent des valeurs précises, voici quelques éxemples :</p>
         </article>
     </h3>
     <h4>
         <ul>
-            <li>&lt;meta name="description" content="Une description de la page..." &gt;</li>
+            <p>&lt;meta name="description" content="Une description de la page..." &gt;</p>
             <article>On parlera de Meta Déscription pour cette ballise, elle affichera une petite description de la page,
                 utile pour le réferencement ou pour avoir un apreçu de la page</article><br>
-            <li>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8&gt;</li>
-            <article>cette balise indiquerait le type de format utilisé, et charset=utf-8 indiquerait le type d'encodage utilisé
-                permettant d'utiliser tous les caractères spéciaux.
+            <p>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8&gt;</p>
+            <article><p>cette balise indiquerait le type de format utilisé, et charset=utf-8 indiquerait le type d'encodage utilisé
+                permettant d'utiliser tous les caractères spéciaux.</p>
             </article>
         </ul>
     </h4>
     <hr>
     <article>
+       <p>
         D'autres types de meta-données existent mais elles sont un peu moins utilisées : <br>
         &lt;meta name="keywords" content="tartiflette, saucisson, maroilles, …" /&gt;
         cette balise permet d’indiquer un certain nombre de mots-clé à associer à associer à la page,ce sont ces mots clés que les moteurs de recherche utilisent pour éventuellement reférencer la page<br>
         &lt;meta name="author" content="RIJARIVO.Afoo" /&gt;
         &lt;meta name="copyright" content="© Supercalifragilisticexpialidocious Inc." /&gt;
         Ces balises permettent de fournir un nom d’auteur à une page et une information sur les droits d’auteurs.
+        </p>
 
     </article>
     <aside>
