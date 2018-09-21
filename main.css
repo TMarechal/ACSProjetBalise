@@ -1,17 +1,17 @@
 @import "Reset.css";
 /*Liste verticale*/
-/*ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 10rem;
+    width: 5rem;
     background-color: #f1f1f1;
 }
 
 li a {
     display: block;
     color: #000;
-    padding: 3rem 8rem;
+    padding: 2.5rem 8rem;
     text-decoration: none;
     background-color:darkgray;
     font-size: 1.4rem;
@@ -24,52 +24,14 @@ li a:hover {
 
 aside > ul {
     position: absolute;
-    top: 72px;
+    top: 85px;
+    bottom: 76px;
     left: 0px;
     width: 10rem;
-    height: 85rem;
+    height: 80rem;
     background-color: #f1f1f1;
-}*/
-
-ul {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
 }
 
-ul {
-    position: relative;
-    display: inline-block;
-}
-
-li {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-li a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-li a:hover {background-color: #f1f1f1}
-
-ul:hover li {
-    display: block;
-}
-
-ul:hover .dropbtn {
-    background-color: #3e8e41;
-}
 /*Liste Horizontale*/
 .Menu {
     list-style-type: none;
@@ -94,6 +56,7 @@ ol a:hover {
     background-color: #555;
     color:white;
 }
+
 /* Titre principal*/
 h1 {
     display: flex;
@@ -129,3 +92,14 @@ section{
 body{
     background-color: cornsilk
 }
+footer {display: inline-block;
+        margin-top: 73rem;
+        width: 190rem;
+        height: 10rem;
+        background-color: black;}
+
+.ACS {display: block;
+    position: absolute;
+    left: 79rem;
+    top: 85.5rem;
+    width: 30rem;}
