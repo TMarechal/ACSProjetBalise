@@ -93,7 +93,8 @@ section{
     font-size: 2rem;
     text-align: justify;
 }
-body{background-color: cornsilk}
+body{background-color: cornsilk;
+background-color: cornsilk opacity: 0.3;}
 
 .footer{  position: absolute;
        bottom:0;
@@ -119,5 +120,42 @@ body{background-color: cornsilk}
          left:35rem;
         top: 95rem;
                }
+
+.formulaire1 {color: black;
+            font-family: 'Noto Serif KR', sans-serif;
+            font-size: 1.5rem;
+            width: 300px;
+            margin: auto;
+            margin-top: 60px;
+            text-align: center;
+            display: block;
+            border: 3px solid black;
+            
+            border-style: inset;}
+
+.formulaire2 {color: black;
+            font-family: 'Noto Serif KR', sans-serif;
+            width: 300px;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 20rem;
+            display: block;
+            border: 3px solid black;}
+
+textarea {width: 250px; height: 150px;}
+
+.titreform {margin-bottom: 10px;
+        color: black;
+    font-size: 2rem;}
+  
+.titremess {margin-bottom: 20px;
+        color: black;
+    font-size: 2rem;}
+.padding{padding: 1rem;}
+    
+    
+    
+
 
 
