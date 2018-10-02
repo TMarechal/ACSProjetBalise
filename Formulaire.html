@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title> head type</title>
+    <meta name="exemple" content="contient un head type">
+    <link rel="stylesheet" href="main.css">
+    <script>
+        
+        function validateForm() {
+            
+            var name = document.getElementById('name').value;
+            var mail = document.getElementById('mail').value;
+            var tel = document.getElementById('tel').value;
+            var radio = document.getElementById('gender').value;
+            var textarea = document.getElementById('message').value;
+            
+            var total = "";
+            
+                if (name == "") 
+                {total="\n Nom et prénom vide ";}
+
+                if (mail == "") 
+                {total=total + "\n E-mail vide ";}
+            
+                if (tel == "")
+                {total=total + "\n Tel vide ";}
+            
+                if (radio == "")
+                {total=total + "\n Genre vide ";}
+            
+                if (textarea == "")
+                    {total=total + "\n Texte vide";}
+            
+                if (total != "")
+                {alert("\n Veuillez remplir les champs suivant : "+total);
+                return false;}
+        }    
+    </script>
+    
+    <title>Formulaire de contact</title>
+</head>
+<body>
+
+<main>
+   
+        <div class="formulaire1 padding">
+        <div class="titreform">Formulaire de contact</div><br>
+        <form method="post" name="Form" onsubmit="return validateForm()"> Nom et Prénom: <br>
+        <input type="text" id="name" > <br> Mail: <br>
+        <input type="email" id="mail" > <br> Numéro de téléphone: <br>
+        <input type="tel" id="tel" 
+        pattern ="[0-9]{10}"
+        maxlength="10"
+        required /> <br>
+        <input id="gender" type="radio" name="gender" value="Homme"> Homme 
+        <input type="radio" name="gender" value="Femme">Femme<br><br> </form>
+</div>
+        
+    
+        <div class="formulaire2">
+        <div class="titremess">Message</div><br>
+        <form method="post" onsubmit="return validateForm()" name="Form"> 
+        <textarea placeholder="Tapez votre message ici..." name="Textarea" id="message"></textarea><br>
+        <button type="submit" value="Submit" id="Envoi">Envoyer le message</button>
+    </form>
+        </div>
+        
+    </main>
+    </body>
+</html>
